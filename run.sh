@@ -201,7 +201,7 @@ ln -s '/home/nominatim/Nominatim/munin/nominatim_nominatim_requests' '/etc/munin
 # Needed to help postgres munin charts work
 apt-get -y install libdbd-pg-perl
 munin-node-configure --shell | grep postgres | sh
-service munin-reload restart
+service munin-node restart
 
 
 # We will use the Nominatim user's homedir for the installation, so switch to that
